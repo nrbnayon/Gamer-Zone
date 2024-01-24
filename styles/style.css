@@ -1,0 +1,623 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Work Sans', sans-serif;
+    scroll-behavior: smooth;
+}
+/* common style start  */
+:root{
+    --linear:#FF42A5;
+    --linear-2: #4EC5F7;
+    --text-primary-color: #3C354F;
+    --text-secondary-color: #0B0223;
+    --text-color: #534C64;
+    --color-white:#fff;
+}
+span{
+    color: var(--linear);
+}
+/* common style end  */
+/* nav style start  */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 10%;
+    background-color: var(--color-white);
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
+}
+.nav-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.25rem;
+}
+.nav-icon img{
+    width: 5.375rem;
+    height: 2.5rem;
+    cursor: pointer;
+}
+.nav-icon h1{
+    font-size: 2.8rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+nav > ul{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+nav li{
+    list-style: none;
+    cursor: pointer;
+}
+nav a{
+    text-decoration: none;
+    color: var(--text-primary-color);
+    font-size: 1.125rem;
+    font-weight: 500;
+}
+nav .follow{
+    border-radius: .5rem;
+    background-color: rgba(11, 2, 35, 0.10);
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    padding: 1rem;
+}
+/* nav style end  */
+/* header style start  */
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:20px 10% 0 0;
+}
+.header-text{
+    background-image: url("../images/Group\ 14.png");
+    background-position: center;
+    background-size: contain;
+    padding: 10%;
+}
+header h2{
+    color:var(--text-secondary-color);
+    font-size: 3rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+header h1{
+    font-size: 5.5rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin: 0 0 1.3rem;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+header p{
+    color: var(--text-color);
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+header button{
+    color: var(--color-white);
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 20px 40px;
+    border-radius: 3rem;
+    border: none;
+    background-color: var(--linear);
+    cursor: pointer;
+}
+header .go{
+    background-color: var(--linear-2);
+}
+header img{
+    width: 500px;
+}
+/* header style end  */
+/* Online Games Funny Videos start  */
+.Online-Games-Funny-Videos{
+    text-align: center;
+    padding: 120px 10%;
+}
+.Online-Games-Funny-Videos h1{
+    color: var(--text-secondary-color);
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+.Online-Games-Funny-Videos > h1 > span{
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.Online-Games-Funny-Videos > p{
+    color: var(--text-color);
+    font-size: 1.125rem;
+    font-weight: 400;
+    margin-bottom: 48px;
+}
+.Online-Games-Funny-Videos-img{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 1.5rem;
+    text-align: left;
+}
+.ogfv-box{
+    position: relative;
+    overflow: hidden;
+    border-radius: 16px;
+}
+.Online-Games-Funny-Videos-img img{
+    width: 100%;
+}
+.ogfv-img{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: calc(100% - 8px);
+    height: calc(100% - 8px);
+    background:black;
+    opacity: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 16px;
+    transition: opacity 1s;
+}
+.ogfv-img i{
+    font-size: 2rem;
+    cursor: pointer;
+}
+.ogfv-box:hover .ogfv-img{
+    opacity: 70%;
+    border: 4px solid var(--linear);
+}
+.Online-Games-Funny-Videos-img p{
+    color: var(--text-color);
+    font-weight: 500;
+    margin: 1.5rem 0;
+}
+/* Online Games Funny Videos end  */
+/* Play Instantly style start  */
+.Play-Instantly{
+    display: grid;grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    padding: 0 10%;
+}
+.Play-Instantly-1{
+    text-align: right;
+    padding:0 18%;
+}
+.Play-Instantly h1{
+    font-size: 3rem;
+    font-weight: 700;
+}
+.Play-Instantly p{
+    color: var(--text-color);
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 30px;
+    margin-top: 1.5rem;
+}
+.play-img-1{
+    width: 550px;
+    border-radius: .5rem;
+    margin-left: 100px;
+}
+.play-img-2{
+    position: relative;
+    margin-top: -250px;
+    width: 300px;
+}
+/* Play Instantly style end  */
+/* icon style start  */
+.icon{
+    background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
+    padding: 120px 10%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+.icon-box{
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+    background-color: var(--color-white);
+    padding: 10px;
+    border-radius: 3rem;
+    border: 2px solid var(--color-white);
+    color: var(--text-secondary-color);
+    font-size: 1.125rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+.icon-box:hover{
+    color: var(--linear);
+    border: 2px solid var(--linear);
+}
+.icon-box img{
+    width: 50px;
+}
+/* icon style end  */
+/* footer style start   */
+footer{
+    background-color: var(--text-secondary-color);
+    padding: 120px 20%;
+    color: var(--color-white);
+    text-align: center;
+}
+footer li{
+    list-style: none;
+}
+footer a{
+    text-decoration: none;
+}
+.foot-ul-1{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    margin: 4rem;
+}
+.foot-ul-1 a{
+    color: var(--color-white);
+font-size: 1.125rem;
+font-weight: 600;
+}
+.social-icon{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    padding: 0 30%;
+    cursor: pointer;
+}
+.foot-ul-2{
+    display: flex;
+    margin: 4rem 0 2rem 0;
+    padding: 0 10%;
+    gap: 3rem;
+}
+.foot-ul-2 a{
+    color: rgba(255, 255, 255, 0.60);
+    font-size: 1rem;
+    font-weight: 500;
+}
+footer p{
+    color: rgba(255, 255, 255, 0.60);
+    font-size: 16px;
+    font-weight: 500;
+}
+/* footer style end   */
+
+
+
+/* small mobile style start */
+@media screen and (max-width: 320px) {
+    nav,
+    nav > ul{
+        flex-direction: column;
+    }
+    .nav-icon{
+        margin-bottom: 3rem;
+    }
+    .nav-icon{
+        margin-bottom: 2rem;
+    }
+    header{
+        flex-direction: column-reverse;
+        padding:5px;
+    }
+    header img{
+        width: 250px;
+    }
+    header h2{
+        font-size: 2rem;
+    }
+    header h1{
+        font-size: 4rem;
+    }
+    header p{
+        font-size: 1rem;
+    }
+    header button{
+        font-size: .8rem;
+        padding: 15px 30px;
+    }
+    .Online-Games-Funny-Videos-img{
+        grid-template-columns: 1fr;
+    }
+    
+    .Online-Games-Funny-Videos h1{
+        font-size: 2rem;
+    }
+    .Online-Games-Funny-Videos > p{
+        font-size: 1rem;
+    }
+    .Online-Games-Funny-Videos-img{
+        grid-template-columns: 1fr;
+    }
+    .ogfv-box{
+        position: relative;
+        overflow: hidden;
+        border-radius: 16px;
+    }
+    .Online-Games-Funny-Videos-img img{
+        width: 100%;
+    }
+    .ogfv-img{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: calc(100% - 8px);
+        height: calc(100% - 8px);
+        background:black;
+        opacity: 0%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        border-radius: 16px;
+        transition: opacity 1s;
+    }
+    .ogfv-img i{
+        font-size: 2rem;
+        cursor: pointer;
+    }
+    .ogfv-box:hover .ogfv-img{
+        opacity: 70%;
+        border: 4px solid var(--linear);
+    }
+    .Online-Games-Funny-Videos-img p{
+        color: var(--text-color);
+        font-weight: 500;
+        margin: 1.5rem 0;
+    }
+    .Play-Instantly{
+        display: flex;
+        flex-direction: column;
+        padding: 0 5%;
+    }
+    .play-img-1{
+        width: 220px;
+        margin-left: 30px;
+        margin-top: 20px;
+    }
+    .play-img-2{
+        width: 120px;
+    }
+    .Play-Instantly-1{
+        text-align: center;
+        padding: 0;
+    }
+    .Play-Instantly h1{
+        font-size: 2rem;
+    }
+    .Play-Instantly p{
+        font-size: 1rem;
+    
+    }
+    .icon{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .icon-box{
+        gap: 10px;
+        padding: 5px;
+        font-size: 0.8rem;
+    }
+    .icon-box img{
+        width: 30px;
+    }
+    footer{
+        padding: 120px 0px;
+    }
+    .foot-ul-1{
+        grid-template-columns: repeat(2,1fr);
+        gap: 30px;
+    }
+    .social-icon{
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0 30%;
+        gap: 30px;
+    }
+    .foot-ul-2{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        padding:0 25%;
+        gap: 20px;
+    }   
+    .foot-ul-1 a{
+    font-size: .8rem;
+    }
+    .foot-ul-2{
+        padding: 0 6%;
+        gap: .2rem;
+    }
+    .foot-ul-2 a{
+        font-size: .8rem;
+    }
+    footer p{
+        font-size: .6rem;
+    }
+}
+/* small mobile style end */
+/* mobile style start */
+@media screen and (min-width: 321px) and (max-width: 640px) {
+    
+    nav,
+    nav > ul{
+        flex-direction: column;
+    }
+    
+    header{
+        flex-direction: column-reverse;
+        padding:20px;
+    }
+    header h2{
+        font-size: 2.6rem;
+    }
+    .Online-Games-Funny-Videos-img{
+        grid-template-columns: 1fr;
+    }
+    .nav-icon{
+        margin-bottom: 3rem;
+    }
+    header img{
+        width: 300px;
+    }
+    .Play-Instantly{
+        display: flex;
+        flex-direction: column;
+        padding: 0 5%;
+    }
+    .play-img-1{
+        width: 300px;
+        margin-left: 40px;
+        margin-top: 30px;
+    }
+    .play-img-2{
+    margin-top: -100px;
+        width: 150px;
+
+    }
+    .Play-Instantly-1{
+        text-align: center;
+        padding: 0;
+    }
+    
+    .icon{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+    .icon-box{
+        gap: 10px;
+        padding: 5px;
+        font-size: 0.6rem;
+    }
+    .icon-box img{
+        width: 20px;
+    }
+    footer{
+        padding: 120px 0px;
+    }
+    .foot-ul-1{
+        grid-template-columns: repeat(3,1fr);
+        gap: 30px;
+    }
+    .social-icon{
+        grid-template-columns: repeat(3, 1fr);
+        padding: 0 30%;
+        gap: 30px;
+    }
+    .foot-ul-2{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        padding:0 25%;
+        gap: 20px;
+    }
+    .foot-ul-1 a{
+    font-size: .8rem;
+    }
+    .foot-ul-2{
+        text-align: center;
+        padding: 0 6%;
+        gap: .1rem;
+    }
+    .foot-ul-2 a{
+        font-size: .8rem;
+    }
+    footer p{
+        font-size: .6rem;
+    }
+}
+/* mobile style end */
+/* tablet style start */
+@media screen and (min-width: 641px) and (max-width: 990px) {
+    nav{
+        flex-direction: column;
+    }
+    .nav-icon{
+        margin-bottom: 2.5rem;
+    }
+    header{
+        flex-direction: column-reverse;
+        padding: 20px;
+    }
+    .Online-Games-Funny-Videos h1{
+        font-size: 2.5rem;
+    }
+    .Online-Games-Funny-Videos-img{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .Play-Instantly{
+        display: flex;
+        flex-direction: column;
+        padding: 0 5%;
+    }
+    .Play-Instantly-1{
+        text-align: center;
+    }
+    .play-img-1{
+        margin-top: 30px;
+    }
+    .icon{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+    footer{
+        padding: 120px 0px;
+    }
+    .foot-ul-1{
+        grid-template-columns: repeat(3,1fr);
+        padding: 0 10%;
+        gap: 30px;
+    }
+    .foot-ul-2{
+        padding: 0 10%;
+        gap: 30px;
+    }
+    .social-icon{
+        grid-template-columns: repeat(3, 1fr);
+        padding:0 30%;
+        gap: 30px;
+    }
+}
+/* tablet style end */
+/* laptop style start  */
+@media screen and (min-width: 991px) and (max-width: 1024px) {
+    header{
+        padding-right:30%;
+    }
+    header h2{
+        font-size: 2.8rem;
+    }
+    .Play-Instantly{
+        padding: 0 10% 0 5%;
+    }
+    .play-img-1{
+        width: 400px;
+        margin-left: 80px;
+    }
+    
+    .play-img-2{
+        position: relative;
+        margin-top: -120px;
+        width: 180px;
+    }
+    .Play-Instantly-1{
+        padding:0 5% ;
+    }
+    footer{
+        padding: 120px 10%;
+    }
+    
+}
+/* laptop style end  */
